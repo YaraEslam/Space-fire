@@ -5,7 +5,6 @@ import math
 import random
 import Tkinter
 import tkMessageBox
-import emoji
 
 # Set up the screen
 wn = turtle.Screen()
@@ -183,14 +182,14 @@ while True:
             score_pen.clear()
             score_pen.write(scorestring, False, align="left", font=("Arial", 20, "normal"))
             if(score == 10):
-                tkMessageBox.showinfo("Space fire", "You Win" + emoji.emojize(':grinning_face_with_big_eyes:'))
+                tkMessageBox.showinfo("Space fire", "You Win")
                 exit()
 
 
         if isCollision(player, enemy):
             player.hideturtle()
             player.setposition(0,-400)
-            tkMessageBox.showinfo("Space fire", "Game Over "+ emoji.emojize(':😥:'))
+            tkMessageBox.showinfo("Space fire", "Game Over ")
             exit()
             break
 
